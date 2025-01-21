@@ -4,6 +4,7 @@ const amigos = [];
 // Función para agregar un nombre a la lista de participantes
 function agregarAmigo() {
     const input = document.getElementById("amigo");
+    // Trim elimina los espacios en blanco al inicio y al final de la cadena
     const nombre = input.value.trim();
 
     if (nombre === "") {
@@ -26,6 +27,7 @@ function agregarAmigo() {
 
 function actualizarLista() {
     const contenedor = document.getElementById("listaAmigos");
+    // Limpiar la lista de amigos
     contenedor.innerHTML = "";
 
     amigos.forEach((amigo, index) => {
@@ -37,6 +39,7 @@ function actualizarLista() {
         const botonEliminar = document.createElement("button");
         botonEliminar.textContent = "❌";
         botonEliminar.onclick = () => eliminarAmigo(index);
+        // appendClid añade un nodo al final de la lista de hijos de un nodo padre especificado
         box.appendChild(botonEliminar);
         contenedor.appendChild(box);
     });
@@ -65,11 +68,13 @@ function sortearAmigo() {
             alert("No se pudo realizar el sorteo. Intenta nuevamente.");
             return;
         }
-
+        // redondeando numero 
         const indiceAleatorio = Math.floor(Math.random() * posibles.length);
+        // seleccionar un amigo aleatorio
         const seleccionado = posibles[indiceAleatorio];
 
         resultado.push(` ${amigo} tiene como amigo secreto a ${seleccionado}`);
+        // Eliminar el amigo seleccionado de la copia
         copiaAmigos.splice(copiaAmigos.indexOf(seleccionado), 1);
     });
 
