@@ -37,3 +37,9 @@ Este proyecto demuestra un juego de amigo secreto en el que se pueden agregar di
 7. **Función para Cerrar la Caja Flotante**  
    Permite cerrar la ventana emergente que muestra los resultados del sorteo.
 
+   #Referencia 1
+   ![Screenshot_20-1-2025_211953_127 0 0 1](https://github.com/user-attachments/assets/450f427c-76bb-447f-84ce-5e71242fe134)
+   #Referencia 2
+   ![Screenshot_20-1-2025_212035_127 0 0 1](https://github.com/user-attachments/assets/57cda5ab-e624-400b-b912-d48574c099da)
+
+
